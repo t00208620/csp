@@ -2,8 +2,22 @@
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
 <!------ Include the above in your HEAD tag ---------->
     link(rel='stylesheet', href='/stylesheets/style.css')
+    
+    nav.navbar.fixed-top.navbar-toggleable-md.navbar-inverse
+      .container
+        button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarMain')
+          span.navbar-toggler-icon
+        a.nav-link(href='registration') Register
+        a.nav-link(href='main-content') Cruise Info 
+        #navbarMain.navbar-collapse.collapse
+          ul.navbar-nav.mr-auto
+            li.nav-item
+              
+              
 #login
   h3.text-center.text-white.pt-5 Login form
   .container
@@ -29,3 +43,6 @@
               a.text-info(href='main-content') Submit
             #register-link.text-right
               a.text-info(href='registration') Register here
+              
+
+              
