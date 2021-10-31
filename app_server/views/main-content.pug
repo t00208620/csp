@@ -19,9 +19,10 @@ block content
           .card-block
             h4
               a(href='/location')= location.name
-              +outputRating(location.rating)
-              span.badge.badge-pill.badge-default.float-right= location.distance
-            p.address= location.address
+             
+              span.badge.badge-pill.badge-default.float-right= location.departTime
+              span.badge.badge-pill.badge-default.float-center= location.noOfPassengers
+            p.destination= location.destination
             .facilities
               each facility in location.facilities
                 span.badge.badge-warning= facility

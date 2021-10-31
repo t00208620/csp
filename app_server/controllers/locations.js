@@ -1,61 +1,61 @@
-/* GET 'home' page */
+/* GET 'home' page login*/
 const homelist = function(req, res){
-res.render('locations-list', {
+res.render('login', {
 title: 'Loc8r - find a place to work with wifi',
 });
 };
 
 
 
-/* GET 'Location info' page */
+/* GET 'Location info' page  main-content*/
 const locationInfo = function(req, res){
-  res.render('location-info', { title: 'Location info' });
+  res.render('registration', { title: 'Location info' });
 };
 
 /* GET 'Add review' page */
 const addReview = function(req, res){
-  res.render('location-review-form', { title: 'Add review',
+  res.render('main-content', { title: 'Add review',
   title: 'Ship Information',
   pageHeader: { 
-  title: 'Ship Information for the Royal Caribbean Fleet: Sailing times, Departure and Destination, Passenger capacity', 
+  title: 'Ship Information for the Royal Caribbean Fleet: Ship name, Sailing Destination, Passenger capacity, Departure Time', 
   strapline: 'Find places to work with wifi near to you!' 
   },
   locations: [{ 
-  name: 'ADVENTURE -> Max capacity: 5,020',
-  address: 'Cape Liberty NJ, New York -> Galveston, Texas',
-  rating: 5,
+  name: 'ADVENTURE',
+  destination: 'Texas',
+  noOfPassengers: 5020,
   facilities: ['FLOWRIDER®', 'SPLASHAWAY BAY℠', 'THE PERFECT STORM℠'],
-  distance: 'Departs @ 5P.M.'
+  departTime: '17.00'
   },{
-  name: 'BRILLIANCE -> Max capacity: 2,501',
-  address: 'Tampa, Florida -> Puerto Costa Maya, Mexico',
-  rating: 4,
+  name: 'BRILLIANCE',
+  destination: 'Mexico',
+  noOfPassengers: 2501,
   facilities: ['ROCK CLIMBING WALL', 'MINI GOLF', 'ARCADE'],
-  distance: 'Departs @ 4P.M.'
+  departTime: '18.00'
   },{
-  name: 'EXPLORER -> Max capacity: 3,114',
-  address: 'Miami, Florida -> Bridgetown, Barbados',
-  rating: 1,
+  name: 'EXPLORER',
+  destination: 'Barbados',
+  noOfPassengers: 3114,
   facilities: ['ICE RINK', 'POOL PARTY', 'SURFING'],
-  distance: 'Departs @ 4P.M.' 
+  departTime: '20.00' 
   },{
-    name: 'GRANDEUR -> Max capacity: 1,992',
-    address: 'Bridgetown, Barbados -> Castrieus, St.Lucia',
-    rating: 1,
+    name: 'GRANDEUR',
+    destination: 'Toronto',
+    noOfPassengers: 1992,
     facilities: ['CASINO', 'POOLSIDE MOVIES', 'ROCK CLIMBING'],
-    distance: 'Departs @ 10P.M.' 
+    departTime: '10.00' 
     },{
-      name: 'HARMONY -> Max capacity: 5,749',
-      address: 'Orlanda, Florida -> CocoCay, Bahamas',
-      rating: 1,
+      name: 'HARMONY',
+      destination: 'Bahamas',
+      noOfPassengers: 5749,
       facilities: ['ULTIMATE ABYSS℠', 'THE PERFECT STORM℠', 'ZIP LINING'],
-      distance: 'Departs @ 5P.M.' 
+      departTime: '17.00' 
       },{
-        name: 'JEWEL -> Max capacity: 2,388',
-        address: 'Miami, Florida -> Conzumel, Mexico',
-        rating: 1,
+        name: 'JEWEL',
+        destination: 'Florida',
+        noOfPassengers: 2388,
         facilities: ['CASINO', 'POOLSIDE MOVIES', 'ROCK CLIMBING'],
-        distance: 'Departs @ 5P.M.' 
+        departTime: '13.00' 
         }]
 });
 
