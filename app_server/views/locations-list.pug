@@ -1,0 +1,31 @@
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+    link(rel='stylesheet', href='/stylesheets/style.css')
+#login
+  h3.text-center.text-white.pt-5 Login form
+  .container
+    #login-row.row.justify-content-center.align-items-center
+      #login-column.col-md-6
+        #login-box.col-md-12
+          form#login-form.form(action='', method='post')
+            h3.text-center.text-info Login
+            .form-group
+              label.text-info(for='username') Username:
+              br
+              input#username.form-control(type='text', name='username')
+            .form-group
+              label.text-info(for='password') Password:
+              br
+              input#password.form-control(type='password', name='password')
+            .form-group
+              label.text-info(for='remember-me')
+                span Remember me
+                span
+                  input#remember-me(name='remember-me', type='checkbox')
+              br
+              a.text-info(href='location/review/new') Submit
+            #register-link.text-right
+              a.text-info(href='location') Register here

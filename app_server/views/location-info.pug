@@ -1,0 +1,40 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ link(rel='stylesheet', href='/stylesheets/style.css')
+<!------ Include the above in your HEAD tag ---------->
+
+link(href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', rel='stylesheet')
+.container
+  .col-md-6.mx-auto.text-center
+    .header-title
+      h1.wv-heading--title
+        | Check out &mdash; it&rsquo;s free!
+      h2.wv-heading--subtitle
+        | Lorem ipsum dolor sit amet! Neque porro quisquam est qui do dolor amet, adipisci velit...
+  .row
+    .col-md-4.mx-auto
+      .myform.form
+        form(action='', method='post', name='login')
+          .form-group
+            input#username.form-control.my-input(type='text', name='username', placeholder='Username')
+          .form-group
+            input#password.form-control.my-input(type='text', name='password', placeholder='Password')
+          .form-group
+            input#phone.form-control.my-input(type='number', min='0', name='phone', placeholder='Phone')
+          .text-center
+            button.btn.btn-block.send-button.tx-tfm(type='submit') Create Your Free Account
+          .col-md-12
+            .login-or
+              hr.hr-or
+              span.span-or or
+          .form-group
+            a.btn.btn-block.g-button(href='')
+              i.fa.fa-google
+              |  Sign up with Google
+          p.small.mt-3
+            | By signing up, you are indicating that you have read and agree to the 
+            a.ps-hero__content__link(href='') Terms&nbsp;of&nbsp;Use
+            |  and 
+            a(href='') Privacy&nbsp;Policy
+            | .
