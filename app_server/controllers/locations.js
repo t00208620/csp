@@ -1,4 +1,4 @@
-/* GET 'home' page login*/
+/* GET 'login' page*/
 const homelist = function(req, res){
 res.render('login', {
 title: 'Loc8r - find a place to work with wifi',
@@ -7,18 +7,18 @@ title: 'Loc8r - find a place to work with wifi',
 
 
 
-/* GET 'Location info' page  main-content*/
+/* GET 'registration' page*/
 const locationInfo = function(req, res){
   res.render('registration', { title: 'Location info' });
 };
 
-/* GET 'Add review' page */
+/* GET 'main-content' page */
 const addReview = function(req, res){
   res.render('main-content', { title: 'Add review',
   title: 'Ship Information',
   pageHeader: { 
   title: 'Ship Information for the Royal Caribbean Fleet: Ship name, Sailing Destination, Passenger capacity, Departure Time', 
-  strapline: 'Find places to work with wifi near to you!' 
+  strapline: '' 
   },
   locations: [{ 
   name: 'ADVENTURE',
