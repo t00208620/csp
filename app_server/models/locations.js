@@ -1,13 +1,15 @@
 const mongoose = require('mongoose');
-const openingTimeSchema = new mongoose.Schema({
-days: {
+const registrationSchema = new mongoose.Schema({
+username: {
 type: String,
 required: true
 },
-opening: String,
-closing: String,
-closed: {
-type: Boolean,
+password: {
+  type: String,
+  required: true
+  },
+phoneNo: {String,
+type: String,
 required: true
 }
 });
@@ -22,13 +24,11 @@ type: Date,
 'default': Date.now
 }
 });
-const locationSchema = new mongoose.Schema({
+const mainContentSchema = new mongoose.Schema({
   name: {type: String, required: true},
   destination: String,
   noOfPassengers: {type: Number},
   facilities: [String],
-  departTime: [String],
-  openingTimes: [openingTimeSchema],
-  reviews: [reviewSchema]
+  departTime: [String]
 });
-mongoose.model('Location', locationSchema);
+mongoose.model('Location', mainContentSchema);
